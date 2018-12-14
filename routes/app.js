@@ -25,7 +25,7 @@ app.post('/student', function(req, res) {
                 allNewData.push(parseData[i])
             }
             allNewData.push(newData)
-            fs.writeFile('./studentFile.son', JSON.stringify(allNewData, null, 2), (err) => {
+            fs.writeFile('./studentFile.json', JSON.stringify(allNewData, null, 2), (err) => {
                 if (err) {
                     res.send(err)
                 } else {
