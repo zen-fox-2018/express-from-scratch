@@ -1,6 +1,11 @@
 const express = require('express') 
 const app = express()
 const port = 3000
+let data = [
+  {name: 'Sia', subject: 'ipa'}, 
+  {name: 'Xoxo', subject: 'math'},
+  {name: 'dodi', subject: 'ips'}
+]
 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended: true}))
@@ -19,7 +24,7 @@ app.post('/student', (req, res) => {
 })
 
 app.get('/teachers' , (req, res) => {
-  res.render('teacher.ejs')
+  res.render('teacher.ejs', {data})
 })
 
 app.get('/*' , (req, res) => {
