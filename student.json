@@ -1,0 +1,22 @@
+[
+  {
+    "firstname": "nama",
+    "lastname": "panjang",
+    "score": "99"
+  },
+  {
+    "firstname": "satu",
+    "lastname": "dua",
+    "score": "3"
+  },
+  {
+    "firstname": "tiga",
+    "lastname": "dua",
+    "score": "1"
+  },
+  {
+    "firstname": "tiga",
+    "lastname": "dua",
+    "score": "satu"
+  }
+]
